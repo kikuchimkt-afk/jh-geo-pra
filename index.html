@@ -3,47 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Japan Geography App</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中学地理マスター | Geography Master</title>
+    <meta name="description" content="楽しく学べる中学地理学習アプリ。世界と日本の姿、諸地域、特色と課題をクイズ形式でマスターしよう！">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Outfit:wght@400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <!-- Views will be injected here by script.js -->
+        <header class="app-header">
+            <div class="logo">地理<span>Master</span></div>
+        </header>
 
-    <!-- Scripts (Order Matters!) -->
+        <main id="main-content">
+            <!-- Dynamic Content -->
+        </main>
 
-    <!-- 1. Data -->
-    <script src="js/data/prefectures.js"></script>
-    <!-- Map Parts append to window.japanMapParts -->
-    <script src="js/data/mapParts/part0.js"></script>
-    <script src="js/data/mapParts/part1.js"></script>
-    <script src="js/data/mapParts/part2.js"></script>
-    <script src="js/data/mapParts/part3.js"></script>
-    <script src="js/data/mapParts/part4.js"></script>
-    <script src="js/data/mapParts/part5.js"></script>
-    <script src="js/data/mapParts/part6.js"></script>
-    <!-- Assemble Map -->
-    <script src="js/data/JapanMapSVG.js"></script>
-
-    <!-- 2. Components -->
-    <script src="js/components/LandingPage.js"></script>
-    <script src="js/components/JapanMap.js"></script>
-    <script src="js/components/QuizModal.js"></script>
-    <script src="js/components/ResultScreen.js"></script>
-
-    <!-- 3. Logic -->
-    <script src="js/App.js"></script>
-
-    <!-- 4. Entry Point -->
-    <script src="js/main.js"></script>
+        <footer>
+            <p>&copy; ECCベストワン藍住・北島中央</p>
+        </footer>
+    </div>
+    <script src="quiz_data.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
